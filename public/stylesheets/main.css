@@ -1,0 +1,130 @@
+/* 
+    Yellow: #FFE600
+    Dark Grey: #333333
+    Grey: #999999
+    Light Grey: #EEEEEE
+*/
+
+
+.ml-body {
+  margin: 0;
+}
+
+.ml-header {
+  background: #FFE600;
+  width: 100%;
+  height: 56px;
+}
+
+.ml-header-box {
+  margin: 0 11.72% 0 11.72%;
+}
+
+.ml-header-2x {
+  background: #FFE600;
+  width: 100%;
+  height: 112px;
+}
+
+.ml-header-box-2x {
+  margin: 0 11.72% 0 11.72%;
+}
+
+.ml-article {
+  background: #EEEEEE;
+}
+
+/* Assets */
+.ml-logo {
+  background-image: url('/assets/Logo_ML.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  display: inline-block;
+  width: 53px;
+  height: 100%;
+}
+
+.ml-logo-2x {
+  background-image: url('/assets/Logo_ML@2x.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  display: inline-block;
+  width: 106px;
+  height: 100%;
+}
+
+.ml-header-box {
+  height: 100%;
+  max-width: 980px;
+}
+
+.ml-search {
+  border: none;
+  display: inline-block;
+  vertical-align: top;
+  padding: 10px 0 0 26px;
+  max-width: 901px;
+  width: calc(100% - 83px);
+}
+
+
+.ml-input-group {
+  position: relative;
+  max-width: 901px;
+}
+
+.ml-search input {
+  height: 38px;
+  font-size: 18px;
+  color: #333333;
+  border: none;
+  width: 100%;
+  max-width: 859px;
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+  padding: 0 0 0 15px;
+}
+.ml-search input:focus {
+  outline: none;
+}
+
+.ml-search input::-webkit-input-placeholder {
+  color: #999999;
+}
+.ml-search input::-moz-placeholder {
+  color: #999999;
+}
+.ml-search input:-ms-input-placeholder {
+  color: #999999;
+}
+.ml-search input:-moz-placeholder {
+  color: #999999;
+}
+
+
+.ml-btn-search {
+  background-color: #EEEEEE;
+  background-image: url('/assets/ic_Search.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 42px;
+  height: 38px;
+  
+}
+
+.ml-btn-search-2x {
+  background-color: #EEEEEE;
+  background-image: url('/assets/ic_Search@2x.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 84px;
+  height: 76px;
+}
