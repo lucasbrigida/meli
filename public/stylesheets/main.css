@@ -5,6 +5,10 @@
     Light Grey: #EEEEEE
 */
 
+* {
+  padding: 0;
+  margin: 0;
+}
 
 .ml-body {
   margin: 0;
@@ -63,8 +67,8 @@
   display: inline-block;
   vertical-align: top;
   padding: 10px 0 0 26px;
-  max-width: 901px;
-  width: calc(100% - 83px);
+  max-width: 859px;
+  width: calc(100% - 84px);
 }
 
 
@@ -76,14 +80,16 @@
 .ml-search input {
   height: 38px;
   font-size: 18px;
+  background-color: #FFFFFF;
   color: #333333;
   border: none;
-  width: 100%;
+  width: calc(100% - 15px);
   max-width: 859px;
   border-top-left-radius: 3px;
   border-bottom-left-radius: 3px;
   padding: 0 0 0 15px;
 }
+
 .ml-search input:focus {
   outline: none;
 }
