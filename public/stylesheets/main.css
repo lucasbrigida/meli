@@ -1,10 +1,13 @@
 /* 
     Yellow: #FFE600
     Dark Grey: #333333
+    Heavy Grey: #666666
     Grey: #999999
     Light Grey: #EEEEEE
+    Blue: #3483FA
 */
 
+/* Default */
 * {
   padding: 0;
   margin: 0;
@@ -12,6 +15,8 @@
 
 .ml-body {
   margin: 0;
+  background-color: #EEEEEE;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .ml-header {
@@ -30,6 +35,11 @@
   height: 112px;
 }
 
+.ml-header-box {
+  height: 100%;
+  max-width: 1046px;
+}
+
 .ml-header-box-2x {
   margin: 0 11.72% 0 11.72%;
 }
@@ -38,7 +48,17 @@
   background: #EEEEEE;
 }
 
-/* Assets */
+.ml-footer {
+  height: 63px;
+}
+
+.ml-container {
+  margin: 0 11.9% 0 11.9%;
+  /* margin: 0 6.659% 0 6.659%; */
+}
+
+/* Default - Assets */
+
 .ml-logo {
   background-image: url('/assets/Logo_ML.png');
   background-position: center;
@@ -57,34 +77,32 @@
   height: 100%;
 }
 
-.ml-header-box {
-  height: 100%;
-  max-width: 980px;
-}
 
+/* Search bar */
 .ml-search {
   border: none;
   display: inline-block;
   vertical-align: top;
-  padding: 10px 0 0 26px;
-  max-width: 859px;
-  width: calc(100% - 84px);
+  margin: 0 0 0 2.68%;
+  padding: 10px 0 0 0;
+  max-width: calc(100% - 2.68% - 53px);
+  width: calc(100% - 2.68% - 53px);
+  float: right;
 }
-
 
 .ml-input-group {
   position: relative;
-  max-width: 901px;
+  max-width: 961px;
 }
 
 .ml-search input {
-  height: 38px;
+  height: 40px;
   font-size: 18px;
   background-color: #FFFFFF;
   color: #333333;
   border: none;
   width: calc(100% - 15px);
-  max-width: 859px;
+  max-width: 901px;
   border-top-left-radius: 3px;
   border-bottom-left-radius: 3px;
   padding: 0 0 0 15px;
@@ -97,18 +115,22 @@
 .ml-search input::-webkit-input-placeholder {
   color: #999999;
 }
+
 .ml-search input::-moz-placeholder {
   color: #999999;
 }
+
 .ml-search input:-ms-input-placeholder {
   color: #999999;
 }
+
 .ml-search input:-moz-placeholder {
   color: #999999;
 }
 
-
 .ml-btn-search {
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
   background-color: #EEEEEE;
   background-image: url('/assets/ic_Search.png');
   background-position: center;
@@ -117,12 +139,13 @@
   position: absolute;
   top: 0;
   right: 0;
-  width: 42px;
-  height: 38px;
-  
+  width: 45px;
+  height: 40px;
 }
 
 .ml-btn-search-2x {
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
   background-color: #EEEEEE;
   background-image: url('/assets/ic_Search@2x.png');
   background-position: center;
@@ -133,4 +156,225 @@
   right: 0;
   width: 84px;
   height: 76px;
+}
+
+/* Breadcrumb */
+
+.ml-breadcrumb {
+  color: #999999;
+  font-size: 14px;
+  list-style-type: none;
+  margin: 0;
+  padding: 16px 0 16px 0;
+}
+
+.ml-breadcrumb .ml-breadcrumb-item {
+  display: inline;
+}
+
+.ml-breadcrumb .ml-breadcrumb-item::after {
+  content: " >";
+}
+
+.ml-breadcrumb .ml-breadcrumb-item:last-child {
+  font-weight: bold;
+}
+
+.ml-breadcrumb .ml-breadcrumb-item:last-child::after {
+  content: "";
+}
+
+
+/* Results - List */
+.ml-list {
+  background: #FFFFFF;
+  border-radius: 3px;
+}
+
+.ml-list-item {
+  padding: 16px 16px 0 16px;
+}
+
+.ml-list-item::after {
+  border-bottom: 1px #EEEEEE solid;
+}
+
+.ml-list-item-content {
+  border-bottom: 1px solid #eee;
+  padding-bottom: 16px;
+}
+
+.ml-list-item:last-child .ml-list-item-content {
+  border-bottom: none;
+}
+
+.ml-list-item-free-delivery {
+  background-image: url('/assets/ic_shipping.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  display: block;
+  height: 18px;
+  width: 18px;
+  padding-left: 3px;
+}
+
+.ml-list-item-free-delivery-2x {
+  background-image: url('/assets/ic_shipping@2x.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  display: block;
+  padding-left: 3px;
+}
+
+.ml-list-item-image {
+  display: inline-block;
+  padding-right: 16px;
+}
+
+.ml-list-item-image img {
+  width: 109px;
+  height: 109px;
+  border-radius: 3px;
+}
+
+.ml-list-item-info {
+  display: inline-block;
+  vertical-align: top;
+  width: calc(100% - 125px - 59px + 13px)
+}
+
+.ml-list-item-price,
+.ml-list-item-free-delivery,
+.ml-list-item-origin {
+  display: inline-block;
+}
+
+.ml-list-item-price {
+  font-size: 24px;
+  color: #333333;
+}
+
+.ml-list-item-origin {
+  font-size: 12px;
+  text-align: right;
+  float: right;
+  position: relative;
+  right: 0;
+  top: 18px;
+  color: #666666;
+}
+
+.ml-list-item-description {
+  font-size: 18px;
+  padding: 22px 0 0 0;
+  color: #333333;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Item detail */
+
+.ml-list-item-detail {
+  padding: 32px;
+}
+
+.ml-list-item-detail::after {
+  border-bottom: 1px #EEEEEE solid;
+}
+
+.ml-list-item-detail-content {
+  border-bottom: 1px solid #eee;
+  padding-bottom: 16px;
+}
+
+.ml-list-item-detail:last-child .ml-list-item-detail-content {
+  border-bottom: none;
+}
+
+.ml-list-item-detail-free-delivery {
+  background-image: url('/assets/ic_shipping.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  display: block;
+  height: 18px;
+  width: 18px;
+  padding-left: 3px;
+}
+
+.ml-list-item-detail-free-delivery-2x {
+  background-image: url('/assets/ic_shipping@2x.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  display: block;
+  padding-left: 3px;
+}
+
+.ml-list-item-detail-image {
+  display: inline-block;
+}
+
+.ml-list-item-detail-image img {
+  width: 680px;
+}
+
+.ml-list-item-detail-info {
+  display: inline-block;
+  vertical-align: top;
+  width: 231px;
+  float: right;
+}
+
+.ml-list-item-detail-status {
+  font-size: 14px;
+}
+
+.ml-list-item-detail-name {
+  font-size: 24px;
+  padding-top: 8px;
+  font-weight: bold;
+}
+
+.ml-list-item-detail-price,
+.ml-list-item-detail-free-delivery {
+  display: inline-block;
+}
+
+.ml-list-item-detail-price {
+  font-size: 46px;
+  color: #333333;
+  padding-top: 16px;
+}
+
+.ml-list-item-detail-price-cents {
+  font-size: 24px;
+  vertical-align: super;
+}
+
+.ml-list-item-detail-description {
+  padding: 146px 0 0 0;
+  font-size: 16px;
+  color: #999999;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.ml-list-item-detail-description .title {
+  font-size: 28px;
+  width: 100%;
+  display: block;
+  color: #333333;
+}
+
+.ml-list-item-detail-description .content {
+  display: block;
+  padding: 22px 0 0 0;
+}
+
+.ml-list-item-detail-buy-btn {
+  background-color: #3483FA;
+  color: #FFF;
+  border-radius: 3px;
+  width: 231px;
+  height: 44px;
+  border: none;
+  font-size: 16px;
+  margin-top: 25px;
 }
