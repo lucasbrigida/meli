@@ -1,4 +1,7 @@
-https://api.mercadolibre.com/sites/MLA/search?q=ipod&sort=sortId=
-
-node
-v6.14.2
+# Instalação e Execução
+````bash
+git clone 
+cd meli
+npm install
+npm start
+```
