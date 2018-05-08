@@ -31,8 +31,8 @@ router.get('/:id', function(req, res, next) {
     let item = resp.reduce((a, b) => Object.assign(a, b));
     let itemDetail = {
       author: {
-        name: '',
-        lastname: ''
+        name: 'Lucas P',
+        lastname: 'Brigida'
       },
       item: {
         id: item.id,
@@ -84,8 +84,8 @@ router.get('/', function(req, res, next) {
 
     let listItems = Object.assign({
       author: {
-        name: '',
-        lastname: ''
+        name: 'Lucas P',
+        lastname: 'Brigida'
       },
       categories: categories
     }, {items});
