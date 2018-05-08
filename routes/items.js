@@ -14,6 +14,7 @@ var options = {
 /* GET /api/items/:id */
 router.get('/:id', function(req, res, next) {
   let query = Object.keys(req.query).map(key => key + '=' + req.query[key]).join('&');   
+  console.log(req.query);
 
   // get item details
   let detail = rp(Object.assign(options, {
@@ -74,20 +75,25 @@ router.get('/', function(req, res, next) {
         },
         picture: item.thumbnail,
         condition: item.condition,
-        free_shipping: item.shipping.free_shipping
+        free_shipping: item.shipping.free_shipping,
       };
     });
+
+    let filter = resp.filters.length > 0 ? resp.filters[0].values[0].path_from_root : [];
+    let categories = filter.map(path => path.name);
 
     let listItems = Object.assign({
       author: {
         name: '',
         lastname: ''
-      }
+      },
+      categories: categories
     }, {items});
 
     res.status(200).json(listItems);
   })
   .catch(function (err) {
+    console.error(err);
     res.status(500).json(err);
   });
 });
