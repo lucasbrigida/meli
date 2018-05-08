@@ -1,5 +1,5 @@
 # Instalação e Execução
-````bash
+```bash
 git clone 
 cd meli
 npm install
