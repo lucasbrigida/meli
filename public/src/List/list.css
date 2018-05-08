@@ -1,0 +1,85 @@
+/* Results - List */
+.ml-list {
+  background: #FFFFFF;
+  border-radius: 3px;
+}
+
+.ml-list-item {
+  padding: 16px 16px 0 16px;
+}
+
+.ml-list-item::after {
+  border-bottom: 1px #EEEEEE solid;
+}
+
+.ml-list-item-content {
+  border-bottom: 1px solid #eee;
+  padding-bottom: 16px;
+}
+
+.ml-list-item:last-child .ml-list-item-content {
+  border-bottom: none;
+}
+
+.ml-list-item-free-delivery {
+  background-image: url('/assets/ic_shipping.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  display: block;
+  height: 18px;
+  width: 18px;
+  padding-left: 3px;
+}
+
+.ml-list-item-free-delivery-2x {
+  background-image: url('/assets/ic_shipping@2x.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  display: block;
+  padding-left: 3px;
+}
+
+.ml-list-item-image {
+  display: inline-block;
+  padding-right: 16px;
+}
+
+.ml-list-item-image img {
+  width: 109px;
+  height: 109px;
+  border-radius: 3px;
+}
+
+.ml-list-item-info {
+  display: inline-block;
+  vertical-align: top;
+  width: calc(100% - 125px - 59px + 13px)
+}
+
+.ml-list-item-price,
+.ml-list-item-free-delivery,
+.ml-list-item-origin {
+  display: inline-block;
+}
+
+.ml-list-item-price {
+  font-size: 24px;
+  color: #333333;
+}
+
+.ml-list-item-origin {
+  font-size: 12px;
+  text-align: right;
+  float: right;
+  position: relative;
+  right: 0;
+  top: 18px;
+  color: #666666;
+}
+
+.ml-list-item-description {
+  font-size: 18px;
+  padding: 22px 0 0 0;
+  color: #333333;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}

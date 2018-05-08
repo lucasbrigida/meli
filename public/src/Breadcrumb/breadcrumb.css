@@ -1,0 +1,25 @@
+/* Breadcrumb */
+
+.ml-breadcrumb {
+  color: #999999;
+  font-size: 14px;
+  list-style-type: none;
+  margin: 0;
+  padding: 16px 0 16px 0;
+}
+
+.ml-breadcrumb .ml-breadcrumb-item {
+  display: inline;
+}
+
+.ml-breadcrumb .ml-breadcrumb-item::after {
+  content: " > ";
+}
+
+.ml-breadcrumb .ml-breadcrumb-item:last-child {
+  font-weight: bold;
+}
+
+.ml-breadcrumb .ml-breadcrumb-item:last-child::after {
+  content: "";
+}

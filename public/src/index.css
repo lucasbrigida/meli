@@ -1,0 +1,36 @@
+/* 
+COLORS
+  Yellow: #FFE600
+  Dark Grey: #333333
+  Heavy Grey: #666666
+  Grey: #999999
+  Light Grey: #EEEEEE
+  Blue: #3483FA 
+*/
+
+
+/* Default */
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+.ml-body {
+  margin: 0;
+  background-color: #EEEEEE;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.ml-article {
+  background: #EEEEEE;
+}
+
+.ml-container {
+  margin: 0 11.9% 0 11.9%;
+}

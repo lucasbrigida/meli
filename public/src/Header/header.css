@@ -1,0 +1,126 @@
+.ml-header {
+  background: #FFE600;
+  width: 100%;
+  height: 56px;
+}
+
+.ml-header-box {
+  margin: 0 11.72% 0 11.72%;
+}
+
+.ml-header-2x {
+  background: #FFE600;
+  width: 100%;
+  height: 112px;
+}
+
+.ml-header-box {
+  height: 100%;
+  max-width: 1046px;
+}
+
+.ml-header-box-2x {
+  margin: 0 11.72% 0 11.72%;
+}
+
+
+/* Default - Assets */
+
+.ml-logo {
+  background-image: url('/assets/Logo_ML.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  display: inline-block;
+  width: 53px;
+  height: 100%;
+}
+
+.ml-logo-2x {
+  background-image: url('/assets/Logo_ML@2x.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  display: inline-block;
+  width: 106px;
+  height: 100%;
+}
+
+
+/* Search bar */
+.ml-search {
+  border: none;
+  display: inline-block;
+  vertical-align: top;
+  margin: 0 0 0 2.68%;
+  padding: 10px 0 0 0;
+  max-width: calc(100% - 2.68% - 53px);
+  width: calc(100% - 2.68% - 53px);
+  float: right;
+}
+
+.ml-input-group {
+  position: relative;
+  max-width: 961px;
+}
+
+.ml-search input {
+  height: 40px;
+  font-size: 18px;
+  background-color: #FFFFFF;
+  color: #333333;
+  border: none;
+  width: calc(100% - 15px);
+  max-width: 901px;
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+  padding: 0 0 0 15px;
+}
+
+.ml-search input:focus {
+  outline: none;
+}
+
+.ml-search input::-webkit-input-placeholder {
+  color: #999999;
+}
+
+.ml-search input::-moz-placeholder {
+  color: #999999;
+}
+
+.ml-search input:-ms-input-placeholder {
+  color: #999999;
+}
+
+.ml-search input:-moz-placeholder {
+  color: #999999;
+}
+
+.ml-btn-search {
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+  background-color: #EEEEEE;
+  background-image: url('/assets/ic_Search.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 45px;
+  height: 40px;
+}
+
+.ml-btn-search-2x {
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+  background-color: #EEEEEE;
+  background-image: url('/assets/ic_Search@2x.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 84px;
+  height: 76px;
+}

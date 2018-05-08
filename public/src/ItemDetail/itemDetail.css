@@ -1,0 +1,107 @@
+/* Item detail */
+
+.ml-list-item-detail {
+  padding: 32px;
+}
+
+.ml-list-item-detail::after {
+  border-bottom: 1px #EEEEEE solid;
+}
+
+.ml-list-item-detail-content {
+  border-bottom: 1px solid #eee;
+  padding-bottom: 16px;
+}
+
+.ml-list-item-detail:last-child .ml-list-item-detail-content {
+  border-bottom: none;
+}
+
+.ml-list-item-detail-free-delivery {
+  background-image: url('/assets/ic_shipping.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  display: block;
+  height: 18px;
+  width: 18px;
+  padding-left: 3px;
+}
+
+.ml-list-item-detail-free-delivery-2x {
+  background-image: url('/assets/ic_shipping@2x.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  display: block;
+  padding-left: 3px;
+}
+
+.ml-list-item-detail-image {
+  display: inline-block;
+}
+
+.ml-list-item-detail-image img {
+  width: 680px;
+}
+
+.ml-list-item-detail-info {
+  display: inline-block;
+  vertical-align: top;
+  width: 231px;
+  float: right;
+}
+
+.ml-list-item-detail-status {
+  font-size: 14px;
+}
+
+.ml-list-item-detail-name {
+  font-size: 24px;
+  padding-top: 8px;
+  font-weight: bold;
+}
+
+.ml-list-item-detail-price,
+.ml-list-item-detail-free-delivery {
+  display: inline-block;
+}
+
+.ml-list-item-detail-price {
+  font-size: 46px;
+  color: #333333;
+  padding-top: 16px;
+}
+
+.ml-list-item-detail-price-cents {
+  font-size: 24px;
+  vertical-align: super;
+}
+
+.ml-list-item-detail-description {
+  padding: 146px 0 0 0;
+  font-size: 16px;
+  color: #999999;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.ml-list-item-detail-description .title {
+  font-size: 28px;
+  width: 100%;
+  display: block;
+  color: #333333;
+}
+
+.ml-list-item-detail-description .content {
+  display: block;
+  padding: 22px 0 0 0;
+}
+
+.ml-list-item-detail-buy-btn {
+  background-color: #3483FA;
+  color: #FFF;
+  border-radius: 3px;
+  width: 231px;
+  height: 44px;
+  border: none;
+  font-size: 16px;
+  margin-top: 25px;
+}
